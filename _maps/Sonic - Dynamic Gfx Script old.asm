@@ -182,16 +182,10 @@ SonPLC_Shrink5:	dc.b 1,	$14, $D0
 SonPLC_Injury:	dc.b 3,	$B4, $D2, $14, $DE, $34, $E0
 SonPLC_GetAir:	dc.b 3,	$54, $E4, $B4, $EA, $10, $6D
 SonPLC_WaterSlide:dc.b 2, $F4, $F6, $25, 6
-SonPLC_SpinDash1: dc.b $1
-	dc.b $E5, $9
-SonPLC_SpinDash2: dc.b $1
-	dc.b $E5, $18
-SonPLC_SpinDash3: dc.b $1
-	dc.b $E5, $27
-SonPLC_SpinDash4: dc.b $1
-	dc.b $E5, $36
-SonPLC_SpinDash5: dc.b $1
-	dc.b $E5, $45
-SonPLC_SpinDash6: dc.b $1
-	dc.b $E5, $54
-	even
+SonPLC_SpinDash1: dc.b 1, $F5, $10 ; 01 F 510
+SonPLC_SpinDash2: dc.b 1, $F5, $20 ; 01 F 520
+SonPLC_SpinDash3: dc.b 1, $F5, $30 ; 01 F 530
+SonPLC_SpinDash4: dc.b 1, $F5, $40 ; 01 F 540
+SonPLC_SpinDash5: dc.b 1, $F5, $50 ; 01 F 550
+SonPLC_SpinDash6: dc.b 1, $F5, $60 ; 01 F 560
+		even

@@ -366,3 +366,9 @@ fr_Float6:	equ $54
 fr_Injury:	equ $55
 fr_GetAir:	equ $56
 fr_WaterSlide:	equ $57
+fr_Spindash1:	equ (ptr_MS_Spindash1-Map_Sonic)/2	; $58
+fr_Spindash2:	equ (ptr_MS_Spindash2-Map_Sonic)/2	; $59
+fr_Spindash3:	equ (ptr_MS_Spindash3-Map_Sonic)/2	; $5A
+fr_Spindash4:	equ (ptr_MS_Spindash4-Map_Sonic)/2	; $5B
+fr_Spindash5:	equ (ptr_MS_Spindash5-Map_Sonic)/2	; $5C
+fr_Spindash6:	equ (ptr_MS_Spindash6-Map_Sonic)/2	; $5D

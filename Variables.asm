@@ -347,3 +347,11 @@ v_creditsnum:	equ $FFFFFFF4	; credits index number (2 bytes)
 v_megadrive:	equ $FFFFFFF8	; Megadrive machine type
 f_debugmode:	equ $FFFFFFFA	; debug mode flag (sometimes 2 bytes)
 v_init:		equ $FFFFFFFC	; 'init' text string (4 bytes)
+
+;NEW STUFF
+spindash_flag = $39
+spindash_counter = $3A
+horiz_scroll_delay_val: equ $FFFFC904
+Camera_Y_pos_bias: equ $FFFFEED8
+SndID_SpindashRev: equ $FFFFFFBE
+SndID_SpindashRelease: equ $FFFFFFBC

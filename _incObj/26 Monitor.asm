@@ -32,7 +32,7 @@ Mon_Main:	; Routine 0
 		beq.s	@notbroken	; if not, branch
 		move.b	#8,obRoutine(a0) ; run "Mon_Display" routine
 		move.b	#$B,obFrame(a0)	; use broken monitor frame
-		rts	
+		rts
 ; ===========================================================================
 
 	@notbroken:
@@ -82,6 +82,8 @@ Mon_Solid:	; Routine 2
 		tst.w	obVelY(a1)
 		bmi.s	loc_A20A
 		cmpi.b	#id_Roll,obAnim(a1) ; is Sonic rolling?
+		beq.s	loc_A25C	; if yes, branch
+		cmpi.b	#id_Spindash,obAnim(a1)	; is Sonic Spin Dashing?
 		beq.s	loc_A25C	; if yes, branch
 
 loc_A20A:
@@ -135,7 +137,7 @@ Mon_Animate:	; Routine 6
 Mon_Display:	; Routine 8
 		bsr.w	DisplaySprite
 		out_of_range	DeleteObject
-		rts	
+		rts
 ; ===========================================================================
 
 Mon_BreakOpen:	; Routine 4
